@@ -9,7 +9,6 @@ class CalculatorController extends Controller
 {
     public function show(Calculator $calculator, $input = null)
     {
-        dump($calculator);
         return view("calculator", [
             "data" => base64_decode(str_replace(".", "/", $input))
         ]);
