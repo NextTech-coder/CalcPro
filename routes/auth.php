@@ -2,9 +2,9 @@
 
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\RegisterController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Http\Request;
 
 Route::middleware('guest')->group(function () {
     Route::get('register/create', [RegisterController::class, 'create'])->name('register.create');
@@ -12,7 +12,6 @@ Route::middleware('guest')->group(function () {
 
     Route::get('login/create', [AuthController::class, 'create'])->name('login.create');
     Route::post('login', [AuthController::class, 'store'])->name('login.store');
-
 });
 
 Route::middleware('auth')->group(function () {
@@ -25,5 +24,4 @@ Route::middleware('auth')->group(function () {
 
         return redirect()->route('login.create');
     })->name('logout');
-
 });

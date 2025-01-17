@@ -9,14 +9,15 @@ class CalculatorController extends Controller
 {
     public function show(Calculator $calculator, $input = null)
     {
-        return view("calculator", [
-            "data" => base64_decode(str_replace(".", "/", $input))
+        return view('calculator', [
+            'data' => base64_decode(str_replace('.', ' /', $input)),
         ]);
     }
 
     public function getUrl(Request $request)
     {
-        $url = ["url" => str_replace("/", ".", base64_encode($request->input("data")))];
+        $url = ['url' => str_replace('/', '.', base64_encode($request->input('data')))];
+
         return response()->json($url);
     }
 }

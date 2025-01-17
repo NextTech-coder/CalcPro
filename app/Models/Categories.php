@@ -11,7 +11,7 @@ class Categories extends Model
 
     public function categories(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-       return $this->hasMany(self::class, 'parent_id');
+        return $this->hasMany(self::class, 'parent_id');
     }
 
     public function parent(): \Illuminate\Database\Eloquent\Relations\BelongsTo

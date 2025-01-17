@@ -25,15 +25,15 @@ class AuthRequest extends FormRequest
     {
         return [
             'email' => 'required|string|email',
-            'password' => 'required|string'
+            'password' => 'required|string',
         ];
     }
 
     public function authenticate()
     {
-        if (!Auth::attempt($this->only('email', 'password'), $this->boolean('remember'))) {
+        if (! Auth::attempt($this->only('email', 'password'), $this->boolean('remember'))) {
             throw ValidationException::withMessages([
-               'email' => 'Неправильные введенные данные'
+                'email' => 'Неправильные введенные данные',
             ]);
         }
     }

@@ -23,11 +23,11 @@ class CalcusRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required|string|max:255|unique:'.Calculator::class,
-            'hash' => 'required|string|max:255|unique:'.Calculator::class,
-            'slug' => 'required|string|max:255|unique:'.Calculator::class,
+            'name' => 'required|string|max:255|unique:' . Calculator::class,
+            'hash' => 'required|string|max:255|unique:' . Calculator::class,
+            'slug' => 'required|string|max:255|unique:' . Calculator::class,
             'description' => 'required|string|max:160',
-            'editor' => 'required|string'
+            'editor' => 'required|string',
         ];
     }
 }

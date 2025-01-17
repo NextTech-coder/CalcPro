@@ -16,9 +16,10 @@ class RoleUser
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (!Auth::user()->isRole('admin')) {
+        if (! Auth::user()->isRole('admin')) {
             return redirect()->intended();
         }
+
         return $next($request);
     }
 }

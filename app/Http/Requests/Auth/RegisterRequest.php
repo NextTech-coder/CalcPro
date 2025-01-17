@@ -24,9 +24,9 @@ class RegisterRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required|string|unique:'.User::class,
-            'email' => 'required|string|email|lowercase:|max:255|unique:'.User::class,
-            'password' => ['required', 'confirmed', Password::default()]
+            'name' => 'required|string|unique:' . User::class,
+            'email' => 'required|string|email|lowercase:|max:255|unique:' . User::class,
+            'password' => ['required', 'confirmed', Password::default()],
         ];
     }
 
@@ -35,7 +35,7 @@ class RegisterRequest extends FormRequest
         return [
             'name' => '"Логин"',
             'email' => '"E-mail"',
-            'password' => '"Пароль"'
+            'password' => '"Пароль"',
         ];
     }
 }

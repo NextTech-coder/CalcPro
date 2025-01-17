@@ -9,8 +9,8 @@ use Illuminate\View\Component;
 
 class Profile extends Component
 {
-
     public $user;
+
     public function __construct()
     {
         $this->user = Auth::user();
@@ -21,9 +21,8 @@ class Profile extends Component
      */
     public function render(): View|Closure|string
     {
-
         return view('components.profile', [
-            'user' => $this->user
+            'user' => $this->user,
         ]);
     }
 }
