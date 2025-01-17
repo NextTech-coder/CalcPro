@@ -12,6 +12,8 @@ class CalculatorController extends Controller
 
 
 
+
+
         return view('calculator', [
             'data' => base64_decode(str_replace('.', ' /', $input)),
         ]);
