@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function () {
-    Route::get('register/create', [RegisterController::class, 'create'])->name('register.create');
-    Route::post('register', [RegisterController::class, 'store'])->name('register.store');
+    Route::get('registers/create', [RegisterController::class, 'create'])->name('register.create');
+    Route::post('registers', [RegisterController::class, 'store'])->name('register.store');
 
     Route::get('login/create', [AuthController::class, 'create'])->name('login.create');
     Route::post('login', [AuthController::class, 'store'])->name('login.store');
