@@ -1,104 +1,18 @@
 {
     "preset": "laravel",
     "rules": {
-        "array_indentation": true,
-        "array_syntax": {
-            "syntax": "short"
-        },
         "combine_consecutive_unsets": true,
-        "class_attributes_separation": {
-            "elements": {
-                "method": "one"
-            }
-        },
-        "multiline_whitespace_before_semicolons": false,
-        "single_quote": true,
-        "blank_line_after_opening_tag": true,
-        "braces": {
-            "allow_single_line_closure": false
-        },
-        "cast_spaces": true,
-        "concat_space": {
-            "spacing": "one"
-        },
-        "declare_equal_normalize": true,
-        "function_typehint_space": true,
-        "single_line_comment_style": {
-            "comment_types": [
-                "hash"
-            ]
-        },
-        "include": true,
-        "lowercase_cast": true,
-        "no_empty_comment": true,
-        "no_empty_statement": true,
-        "no_extra_blank_lines": {
-            "tokens": [
-                "curly_brace_block",
-                "extra",
-                "throw",
-                "use"
-            ]
-        },
-        "binary_operator_spaces": {
-            "operators": {
-                "=>": "single_space"
-            }
-        },
-        "no_leading_import_slash": true,
-        "no_leading_namespace_whitespace": true,
-        "no_multiline_whitespace_around_double_arrow": true,
-        "no_singleline_whitespace_before_semicolons": true,
-        "no_spaces_around_offset": true,
-        "no_trailing_comma_in_list_call": true,
-        "no_trailing_comma_in_singleline_array": true,
-        "no_whitespace_before_comma_in_array": true,
-        "no_whitespace_in_blank_line": true,
-        "normalize_index_brace": true,
-        "object_operator_without_whitespace": true,
-        "return_type_declaration": true,
-        "short_scalar_cast": true,
-        "blank_lines_before_namespace": true,
-        "single_class_element_per_statement": true,
-        "standardize_not_equals": true,
-        "ternary_operator_spaces": true,
-        "trailing_comma_in_multiline": {
-            "elements": [
-                "arrays"
-            ]
-        },
-        "trim_array_spaces": true,
-        "unary_operator_spaces": true,
-        "whitespace_after_comma_in_array": true,
-        "space_after_semicolon": true,
-        "lowercase_keywords": true,
-        "single_line_comment_spacing": true,
-        "elseif": true,
-        "no_alternative_syntax": true,
-        "switch_case_space": true,
-        "blank_line_after_namespace": true,
-        "no_space_around_double_colon": true,
-        "compact_nullable_typehint": true,
-        "line_ending": true,
-        "method_chaining_indentation": true,
-        "no_spaces_inside_parenthesis": true,
-        "single_line_after_imports": true,
-        "ordered_imports": {
-            "sort_algorithm": "alpha"
-        },
-        "no_trailing_comma_in_singleline_function_call": true,
-        "no_spaces_after_function_name": true,
+        "concat_space": { "spacing": "one" },
         "method_argument_space": {
             "keep_multiple_spaces_after_comma": false,
             "on_multiline": "ignore"
-        }
-    },
-    "exclude": [
-        "bootstrap",
-        "storage",
-        "vendor",
-        "public",
-        "node_modules",
-        "database/migrations"
-    ]
+        },
+        "no_empty_comment": true,
+        "no_superfluous_phpdoc_tags": false,
+        "no_unreachable_default_argument_value": false,
+        "not_operator_with_successor_space": false,
+        "phpdoc_align": { "align": "left" },
+        "phpdoc_summary": true,
+        "spaces_inside_parentheses": { "space": "none" }
+    }
 }

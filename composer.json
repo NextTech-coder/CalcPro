@@ -9,15 +9,16 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "laravel/framework": "^11.38.2",
+        "laravel/framework": "^12.32.2",
         "laravel/tinker": "^2.10.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.14.10",
         "fakerphp/faker": "^1.24.1",
         "friendsofphp/php-cs-fixer": "^3.68.1",
+        "larastan/larastan": "^3.0",
         "laravel/pint": "^1.20.0",
-        "laravel/sail": "^1.40",
+        "laravel/sail": "^1.46",
         "mockery/mockery": "^1.6.12",
         "nunomaduro/collision": "^8.5.0",
         "phpunit/phpunit": "^11.5.0",

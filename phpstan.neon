@@ -1,0 +1,11 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - vendor/nesbot/carbon/extension.neon
+
+parameters:
+    level: max
+    paths:
+        - app/
+    ignoreErrors:
+        - '#Call to an undefined method LdapRecord\\Models\\ActiveDirectory\\User::[a-zA-Z0-9_]+#'
+        - '#Trait App\\Traits\\Filterable is used zero times and is not analysed.#' #remove this line when trait will be used

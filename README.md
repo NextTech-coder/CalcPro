@@ -1,19 +1,61 @@
-Проект с разными калькуляторами.
-=====================
+# 🧮 Calculators Platform
 
-На сайте есть:
-* Профиль пользователей.
-* Как ни странно калькуляторы.
-* Сохранение калькуляторов.
-* Можно делиться результатами.
-* Также можно встраивать калькуляторы на другой сайт (виджет)
-* Сообщение об ошибки
-* Админка
-* Регистрация / Авторизация
+A web platform that allows users to create, use, and share calculators online.
+The project includes user profiles, calculator management, embedding capabilities, and an admin panel for full control.
 
-Я не сильно хотел загружать проект разными фрейморками, конечно можно было-бы создать на Vue. Но был бы перебор.
+---
 
-Технологии в проекте:
-* Laravel `11.2`
-* JavaScript  `ES6+`
-* FontAwesome `v5`
+## ✨ Features
+
+- 👤 **User Profiles** – Personal accounts with saved calculators
+- 🧠 **Calculators** – Various built-in calculators with the ability to create and save
+- 💾 **Save Results** – Store and manage calculator results
+- 🔗 **Share Results** – Share your results with others via a link
+- 🌍 **Embeddable Widgets** – Easily embed calculators on external websites
+- 🚨 **Error Reporting** – Users can send error reports directly from the app
+- 🛠️ **Admin Panel** – Full control over calculators, users, and reports [Moonshine](https://moonshine-laravel.com/)
+- 🔐 **Registration / Authentication** – Secure user access
+
+---
+
+## 🧰 Tech Stack
+
+- ⚙️ **Framework**: [Laravel 12.32.2](https://laravel.com/)
+- 💻 **Frontend**: Vanilla JavaScript (ES6+)
+- 🎨 **Icons**: [FontAwesome v5](https://fontawesome.com/v5/)
+
+---
+
+## 🧑‍💻 Local Development
+
+This project uses **[Laravel Sail](https://laravel.com/docs/sail)** for local development.
+
+### 🚀 Setup Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   ```
+2. **Install dependencies:**
+   ```bash
+    composer install
+    npm install
+   ```
+3. **Copy environment file:**
+   ```bash
+    cp .env.example .env
+   ```
+4. **Configure environment variables in .env file (database, app URL, etc.)**
+5. **Start Laravel Sail:**
+   ```bash
+    ./vendor/bin/sail up -d
+   ```
+6. **Run migrations:**
+   ```bash
+    ./vendor/bin/sail artisan migrate
+   ```
+7. **Generate application key:**
+   ```bash
+    ./vendor/bin/sail artisan key:generate
+   ```
