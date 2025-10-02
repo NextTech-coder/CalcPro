@@ -11,7 +11,7 @@ use Illuminate\View\View;
 class RegisterController extends Controller
 {
     /**
-     * Вывод шаблона регистрации
+     * Вывод шаблона регистрации.
      */
     public function create(): View
     {
@@ -19,7 +19,7 @@ class RegisterController extends Controller
     }
 
     /**
-     * Регистрация пользователя
+     * Регистрация пользователя.
      */
     public function store(RegisterRequest $request): RedirectResponse
     {

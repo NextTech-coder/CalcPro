@@ -10,7 +10,7 @@ use Illuminate\View\View;
 class AuthController extends Controller
 {
     /**
-     * Вывод шаблона для авторизации
+     * Вывод шаблона для авторизации.
      */
     public function create(): View
     {
@@ -18,7 +18,7 @@ class AuthController extends Controller
     }
 
     /**
-     * Авторизация пользователя
+     * Авторизация пользователя.
      */
     public function store(AuthRequest $request): RedirectResponse
     {

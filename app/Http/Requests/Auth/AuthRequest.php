@@ -31,7 +31,7 @@ class AuthRequest extends FormRequest
 
     public function authenticate()
     {
-        if (! Auth::attempt($this->only('email', 'password'), $this->boolean('remember'))) {
+        if (!Auth::attempt($this->only('email', 'password'), $this->boolean('remember'))) {
             throw ValidationException::withMessages([
                 'email' => 'Неправильные введенные данные',
             ]);
